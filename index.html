@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>CountryDetails </title>
+    <style>
+        body
+            {
+                background-image: url('data:image/jpeg;base64,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');
+                background-size: cover;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h2 class="text-dark mt-5 text-center">COUNTRY DETAILS</h2>
+                <div class="d-flex mt-5">
+                    <input type="text" placeholder="enter country name.." class="form-control" id="country">
+                    <input type="button" value="Search" class="btn btn-success ms-3" onclick="search()">
+                </div>
+                <div id="results" class="mt-5 justify-content-center align-items-center d-flex">
+                    
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <script>
+        const search= async()=>
+            {
+                if(country.value !=='')
+                    {
+                        let countryName=country.value;
+                        const response=await fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`);
+                        console.log(response);
+                        response.json().then((data)=>
+                            {
+                                let result = data[0];
+                                let cname=result.name.common;
+                                console.log(cname);
+                                let ccapital=result.capital[0];
+                                console.log(ccapital);
+                                let cpopulation=result.population;
+                                console.log(cpopulation);
+                                let ctimezone=result.timezones;
+                                console.log(ctimezone);
+                                let ccontinent=result.continents[0];
+                                console.log(ccontinent);
+                                let cflag=result.flags.png;
+                                let clang=[];
+                                for(var lang in result.languages)
+                                    {
+                                        console.log(lang);
+                                        clang.push(result.languages[lang])
+                                    }
+                                let currencyTemp=result.currencies;
+                                let ccurrency;
+                                for (var curr in currencyTemp)
+                                    {
+                                        ccurrency=currencyTemp[curr].name;
+                                    }
+                                console.log(ccurrency);
+                                let cmaps=result.maps.googleMaps;
+                                results.innerHTML=`<div class="card" style="width: 18rem;">
+                                                        <img src=${cflag} class="card-img-top p-3" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">${cname}</h5>
+                                                        </div>
+                                                        <ul class="list-group list-group-flush">
+                                                            <li class="list-group-item">${ccapital}</li>
+                                                            <li class="list-group-item">${cpopulation}</li>
+                                                            <li class="list-group-item">${ctimezone}</li>
+                                                            <li class="list-group-item">${ccontinent}</li>
+                                                            <li class="list-group-item">${clang}</li>
+                                                            <li class="list-group-item">${ccurrency}</li>
+                                                        </ul>
+                                                        <div class="card-body">
+                                                            <a href="${cmaps}" class="card-link">Maps</a>
+                                                        </div>
+                                                    </div>`   
+                            });
+                    }
+                else
+                    {
+                        alert("Please enter a country name!!")
+                    }
+            }
+    </script>
+</body>
+</html>
